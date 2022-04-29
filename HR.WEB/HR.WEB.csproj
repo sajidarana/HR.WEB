@@ -1,0 +1,46 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net5.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Include="wwwroot\css\app.css" />
+    <None Include="wwwroot\css\app.css.map" />
+    <None Include="wwwroot\fonts\.gitkeep" />
+    <None Include="wwwroot\img\avatars\avatar-2.jpg" />
+    <None Include="wwwroot\img\avatars\avatar-3.jpg" />
+    <None Include="wwwroot\img\avatars\avatar-4.jpg" />
+    <None Include="wwwroot\img\avatars\avatar-5.jpg" />
+    <None Include="wwwroot\img\avatars\avatar.jpg" />
+    <None Include="wwwroot\img\icons\icon-48x48.png" />
+    <None Include="wwwroot\img\photos\unsplash-1.jpg" />
+    <None Include="wwwroot\img\photos\unsplash-2.jpg" />
+    <None Include="wwwroot\img\photos\unsplash-3.jpg" />
+    <None Include="wwwroot\js\app.js" />
+    <None Include="wwwroot\js\app.js.LICENSE.txt" />
+    <None Include="wwwroot\js\app.js.map" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.Identity.EntityFrameworkCore" Version="5.0.0" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="5.0.2" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="5.0.0">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+    <PackageReference Include="MySql.Data.EntityFrameworkCore" Version="8.0.22" />
+    <PackageReference Include="MySql.EntityFrameworkCore" Version="5.0.0" />
+    <PackageReference Include="Pomelo.EntityFrameworkCore.MySql.Design" Version="1.1.2" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\HR.DAL\HR.DAL.csproj" />
+    <ProjectReference Include="..\HR.DATA\HR.DATA.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Assets\" />
+  </ItemGroup>
+
+</Project>
